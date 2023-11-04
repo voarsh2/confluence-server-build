@@ -4,7 +4,7 @@ services:
     image: 192.168.100.103:30009/library/confluence-server:8.5.3
     container_name: confluence-srv
     environment:
-      - TZ='Asia/Shanghai'
+      - TZ='Europe/London'
       - JVM_MINIMUM_MEMORY=3g
       - JVM_MAXIMUM_MEMORY=16g
       - JVM_CODE_CACHE_ARGS='-XX:InitialCodeCacheSize=6g -XX:ReservedCodeCacheSize=8g'
