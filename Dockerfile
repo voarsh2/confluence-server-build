@@ -10,7 +10,7 @@ ARG MYSQL_DRIVER_VERSION=8.0.22
  
 ENV CONFLUENCE_HOME=/var/confluence \
     CONFLUENCE_INSTALL=/opt/confluence \
-    JVM_MINIMUM_MEMORY=2g \
+    JVM_MINIMUM_MEMORY=4g \
     JVM_MAXIMUM_MEMORY=8g \
     JVM_CODE_CACHE_ARGS='-XX:InitialCodeCacheSize=4g -XX:ReservedCodeCacheSize=8g' \
     AGENT_PATH=/var/agent \
