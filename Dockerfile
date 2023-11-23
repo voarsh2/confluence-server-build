@@ -15,7 +15,7 @@ ENV CONFLUENCE_HOME=/var/confluence \
     JVM_CODE_CACHE_ARGS='-XX:InitialCodeCacheSize=4g -XX:ReservedCodeCacheSize=8g' \
     AGENT_PATH=/var/agent \
     AGENT_FILENAME=atlassian-agent.jar \
-    LIB_PATH=/confluence/WEB-INF/lib
+    LIB_PATH=/confluence/WEB-INF/lib \
     CATALINA_OPTS="-Xms2g -Xmx2g"
  
 ENV JAVA_OPTS="-javaagent:${AGENT_PATH}/${AGENT_FILENAME} ${JAVA_OPTS} ${CATALINA_OPTS}"
