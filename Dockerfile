@@ -16,8 +16,9 @@ ENV CONFLUENCE_HOME=/var/confluence \
     AGENT_PATH=/var/agent \
     AGENT_FILENAME=atlassian-agent.jar \
     LIB_PATH=/confluence/WEB-INF/lib
+    CATALINA_OPTS="-Xms2g -Xmx2g ${CATALINA_OPTS}"
  
-ENV JAVA_OPTS="-javaagent:${AGENT_PATH}/${AGENT_FILENAME} ${JAVA_OPTS}"
+ENV JAVA_OPTS="-javaagent:${AGENT_PATH}/${AGENT_FILENAME} ${JAVA_OPTS} ${CATALINA_OPTS}"
  
 RUN mkdir -p ${CONFLUENCE_INSTALL} ${CONFLUENCE_HOME} ${AGENT_PATH} ${CONFLUENCE_INSTALL}${LIB_PATH} \
 && curl -o ${AGENT_PATH}/${AGENT_FILENAME}  https://github.com/haxqer/confluence/releases/download/v${AGENT_VERSION}/atlassian-agent.jar -L \
