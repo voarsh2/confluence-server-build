@@ -16,7 +16,7 @@ ENV CONFLUENCE_HOME=/var/confluence \
     AGENT_PATH=/var/agent \
     AGENT_FILENAME=atlassian-agent.jar \
     LIB_PATH=/confluence/WEB-INF/lib \
-    CATALINA_OPTS="-Xms8g -Xmx8g"
+    CATALINA_OPTS="-Xms8g -Xmx8g -Datlassian.plugins.startup.options='--disable-all-addons'"
  
 ENV JAVA_OPTS="-javaagent:${AGENT_PATH}/${AGENT_FILENAME} ${JAVA_OPTS} ${CATALINA_OPTS}"
  
