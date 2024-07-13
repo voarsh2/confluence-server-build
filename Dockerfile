@@ -4,7 +4,7 @@ LABEL maintainer="haxqer <haxqer666@gmail.com>" version="8.5.12"
  
 ARG ATLASSIAN_PRODUCTION=confluence
 ARG APP_NAME=confluence
-ARG APP_VERSION=8.5.10
+ARG APP_VERSION=8.5.12
 ARG AGENT_VERSION=1.3.3
 ARG MYSQL_DRIVER_VERSION=8.0.22
  
