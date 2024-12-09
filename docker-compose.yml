@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   confluence:
-    image: 192.168.96.61:30009/library/confluence-server:8.5.17
+    image: 192.168.96.61:30009/library/confluence-server:8.5.18
     container_name: confluence-srv
     environment:
       - TZ='Europe/London'
